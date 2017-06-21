@@ -1,5 +1,10 @@
-<!--The whole content below can be removed with the new code.-->
-<h1>This is the main component</h1>
-  <app-servers></app-servers>
-
+<app-header (passedLink)='onNavigate($event)'></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf='selectedLink === "recipe"'></app-recipes>
+      <app-shopping-list *ngIf='selectedLink != "recipe"'></app-shopping-list>
+    </div>
+  </div>
+</div>
 
