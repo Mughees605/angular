@@ -3,7 +3,7 @@
   "project": {
     "version": "1.0.0-beta.32.3",
     "name": "new-cli"
-    "name": "angular-project"
+    
   },
   "apps": [
     {
@@ -47,7 +47,7 @@
     {
       "files": "e2e/**/*.ts",
       "project": "e2e/tsconfig.json"
-      "project": "src/tsconfig.app.json"
+     
     },
     {
       "project": "src/tsconfig.spec.json"
