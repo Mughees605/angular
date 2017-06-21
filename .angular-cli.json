@@ -3,6 +3,7 @@
   "project": {
     "version": "1.0.0-beta.32.3",
     "name": "new-cli"
+    "name": "angular-project"
   },
   "apps": [
     {
@@ -17,6 +18,9 @@
       "polyfills": "polyfills.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -43,6 +47,13 @@
     {
       "files": "e2e/**/*.ts",
       "project": "e2e/tsconfig.json"
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
     }
   ],
   "test": {
