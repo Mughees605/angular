@@ -1,9 +1,0 @@
-<button class="btn btn-primary" [disabled]='!allowTruthy'(click)='onServerFound()'>Add server</button>
-<hr>
-<h1>Two way data binding</h1>
-<input class="form-control" type="text" [(ngModel)]='name'>
-<h2 *ngIf="serverCreated">Server was found and its name is {{name}}</h2>
-<ul>
-  <li *ngFor='let array of serverArray'>hello {{array}}</li>
-</ul>
-<app-server></app-server>
