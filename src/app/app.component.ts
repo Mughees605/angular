@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  selectedLink:string = "";
-  onNavigate(link:string){
-   this.selectedLink = link
-  }
+  
 }
