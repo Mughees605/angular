@@ -14,4 +14,9 @@ export class ShoppingListService{
   this.ingredients.push(newData);
   console.log(newData,"dd")
  }
+ getIngredientFromRecipeDetail(ing:Ingredient[]){
+     ing.map((ing:Ingredient)=>{
+         this.ingredients.push(ing)
+     })
+ }
 }
