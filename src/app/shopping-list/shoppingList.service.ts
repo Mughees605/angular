@@ -12,5 +12,6 @@ export class ShoppingListService{
  pushData(newName:string,newAmount:number){
   const newData = new Ingredient(newName,newAmount);
   this.ingredients.push(newData);
+  console.log(newData,"dd")
  }
 }
