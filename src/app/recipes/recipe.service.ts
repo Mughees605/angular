@@ -7,7 +7,7 @@ export class RecipeService {
     private recipes: Recipe[] = [
         new Recipe('A Test Recipe', 'This is simply a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg',[new Ingredient('Meat',6), new Ingredient('potatoes',1)]),
         new Recipe('A Test Recipe', 'This is simply a test', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg',[new Ingredient('Mutton',6)]),
-        new Recipe('TestA', 'TestA', 'https://upload.wikimedia.org/wikipedia/commons/1/15/Recipe_logo.jpeg',[new Ingredient('chicken',6)])
+        new Recipe('TestA', 'TestA', 'http://c8.alamy.com/comp/EXNWW6/crispy-chicken-zinger-burger-EXNWW6.jpg',[new Ingredient('chicken',6)])
 
     ];
     getRecipe() {
