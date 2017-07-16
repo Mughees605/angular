@@ -8,12 +8,18 @@ import { ShoppingListService } from '../shoppingList.service'
   styleUrls: ['./shopping-edit.component.css']
 })
 export class ShoppingEditComponent implements OnInit {
-
-
+  
+  editMode:Boolean = false;
+  editedItemIndex:number;
   constructor(private shoppingService:ShoppingListService) { }
 
   ngOnInit() {
-
+    this.shoppingService.startedEditing.subscribe(
+      (index:number)=>{
+        this.editMode = true;
+        this.editedItemIndex = index;
+      }
+    )
   }
   onAddItem(form:NgForm){
     const {name,amount} = form.value;
