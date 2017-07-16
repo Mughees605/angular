@@ -23,6 +23,13 @@ export class ShoppingListService {
        return  this.ingredients[index];
     }
 
+    updateIngredient(index:number, ingredient:Ingredient){
+        
+        this.ingredients[index] = ingredient;
+        this.ingredientsChanged.next(this.ingredients.slice());
+        
+    }
+
     getIngredientFromRecipeDetail(ing: Ingredient[]) {
         ing.map((ing: Ingredient) => {
             this.ingredients.push(ing)
