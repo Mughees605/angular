@@ -30,6 +30,12 @@ export class ShoppingListService {
         
     }
 
+    deleteIngredient(index:number){
+        console.log(index)
+        this.ingredients.splice(index,1);
+        this.ingredientsChanged.next(this.ingredients.slice())
+    }
+
     getIngredientFromRecipeDetail(ing: Ingredient[]) {
         ing.map((ing: Ingredient) => {
             this.ingredients.push(ing)
